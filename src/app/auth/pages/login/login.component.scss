@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.block{
+    width:375px;
+    background-color:#1DB0FC;
+    color:#FFFFFF;
+}
+
+.logoImg{
+    width:400px;
+}
+
+.remember{
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+// span{
+//     width:200px;
+// }
+
+.highlight{
+    font-weight: 500;
+}
+.forgot-password{
+    text-decoration: none;
+    color:#1A1C2D;
+    margin-left: 120px;
+    font-weight: 500;
+}
+
+ .eyeIcon mat-icon{
+    position: absolute; 
+    font-size: 20px;
+    right: 9px;
+    top:30px;
+}
+
+.eyeIcon{
+    position: relative;
+    display: inline-block;
+    width:400px;
+}

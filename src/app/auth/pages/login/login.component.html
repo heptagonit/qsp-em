@@ -1,0 +1,42 @@
+<div class="row align-items-center justify-content-center vh-100">
+    <div class="col-sm-6 p-0">
+      <div class="row align-items-center justify-content-center">
+        <img src="/assets/loginimage.png" alt="" class="img">
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row align-items-center justify-content-center">
+        <img src="/assets/logo.png" class="logoImg" alt="">
+        <div class="text-center highlight mt-5">Sign in to continue</div>
+        <div class="form-wrapper mt-4 col-sm-7">
+          <form (ngSubmit)="login()" [formGroup]="loginForm">
+             <div class="form-group mb-22">
+              <label class="d-block highlight">Email ID </label>
+                <input type="text" class="form-control"  formControlName="email">
+             </div>
+             <div class="form-group mb-32 mt-3">
+              <div class="eyeIcon">
+              <label class="d-block highlight">Password </label>
+                <input type="password" name="password" autocomplete="off" class="form-control"  [type]="hide ? 'password' : 'text'"
+                 formControlName="password" required>
+                 <mat-icon  (click)="myFunction()">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </div>
+             </div> 
+             <div class="form-group mb-26 mt-3"> 
+                <input type="checkbox" class="form-check-input" id="keepLogIn">
+                <label class="form-check-label remember" for="remember">Remember me</label>
+              </div>  
+              <div class="form-group mt-2">
+                <button type="submit" class="btn block" type="submit">
+                  Login
+                </button>
+              </div>  
+              <div class="form-group mt-3">
+                <a href=""class="forgot-password">Forgot your Password?</a>
+              </div>  
+          </form> 
+        </div>
+      </div>
+    </div>
+</div>
