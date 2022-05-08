@@ -37,3 +37,71 @@ $EntityManagement-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#page-content-wrapper {
+  background: #1794D9;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.main-tabs {
+  padding-left: 5.5rem;
+}
+.header-content,.tab-content {
+  height: 70px;
+  // background: #1794D9;
+}
+
+.col-2,.col-10 {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+
+a.tab-link {
+  color: #FFFF;
+  margin-top: 15px;
+  display:block;
+}
+
+.navbar{
+   width:100%;
+}
+
+select {
+  color: #333;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-height: 36px;
+  align-items: center;
+  padding: none;
+}
+
+.has-search{
+  overflow: hidden !important;
+}
+.locationDropDown{
+  width:9%;
+}
+.statusDropDown{
+  width:8%;
+}
+.addDropDown{
+  width:9%;
+}
+.businessDropDown{
+  width:17%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

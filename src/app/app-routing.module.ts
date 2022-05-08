@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/pages/login/login.component';
-import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './core/auth/login/login.component';
 
 const routes: Routes = [
-  {path:'',component:LoginComponent},
-  {path:'home',component:HomeComponent},
-  { path:'home',
-     
-   loadChildren: () => import('./pages/pages.module').then (module => module.PagesModule)},  
-  
+  { path: '', component: LoginComponent },
+  { path: 'dashboard', loadChildren: () => import('./core/pages.module').then(module => module.PagesModule) },
+  { path: '**', component: LoginComponent },
 ];
 
 @NgModule({

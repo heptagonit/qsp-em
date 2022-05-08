@@ -20,22 +20,22 @@
               <label class="d-block highlight">Password </label>
                 <input type="password" name="password" autocomplete="off" class="form-control"  [type]="hide ? 'password' : 'text'"
                  formControlName="password" required>
-                 <mat-icon  (click)="myFunction()">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                 <mat-icon  (click)="showPassword()">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
             </div>
-             </div> 
-             <div class="form-group mb-26 mt-3"> 
+             </div>
+             <div class="form-group mb-26 mt-3">
                 <input type="checkbox" class="form-check-input" id="keepLogIn">
                 <label class="form-check-label remember" for="remember">Remember me</label>
-              </div>  
+              </div>
               <div class="form-group mt-2">
                 <button type="submit" class="btn block" type="submit">
                   Login
                 </button>
-              </div>  
+              </div>
               <div class="form-group mt-3">
                 <a href=""class="forgot-password">Forgot your Password?</a>
-              </div>  
-          </form> 
+              </div>
+          </form>
         </div>
       </div>
     </div>

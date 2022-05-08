@@ -9,19 +9,28 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  loginForm = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
-  });
-  constructor( private router:Router) { }
+
+  hide: boolean = true;
+  loginForm: FormGroup
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.createForm();
   }
+
+  createForm() {
+    this.loginForm = new FormGroup({
+      email: new FormControl(''),
+      password: new FormControl(''),
+    });
+  }
+
   login() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/dashboard']);
   }
-  hide: boolean = true;
-  myFunction() {
+
+  showPassword() {
     console.log(this.hide)
     this.hide = !this.hide;
   }
