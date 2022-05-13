@@ -8,6 +8,10 @@ import { ClientHistoryComponent } from './client-history/client-history.componen
 import { DueCalendarComponent } from './due-calendar/due-calendar.component';
 import { ClientAlertsComponent } from './client-alerts/client-alerts.component';
 import { OnboardClientSearchComponent } from './onboard-client-search/onboard-client-search.component';
+import { CreateOnboardClientComponent } from './create-onboard-client/create-onboard-client.component';
+import { AboutClientComponent } from './about-client/about-client.component';
+import { SpocDetailsComponent } from './spoc-details/spoc-details.component';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +22,9 @@ import { OnboardClientSearchComponent } from './onboard-client-search/onboard-cl
     DueCalendarComponent,
     ClientAlertsComponent,
     OnboardClientSearchComponent,
+    CreateOnboardClientComponent,
+    AboutClientComponent,
+    SpocDetailsComponent,
   ],
   imports: [
     PagesRoutingModule,

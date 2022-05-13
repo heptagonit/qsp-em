@@ -1,0 +1,32 @@
+<h3>About Client</h3>
+<form [formGroup]="editOnbordingClient">
+   <div class="row">
+       <div class="col-4">
+            <div class="form-group">
+               <label>Organization Name</label>
+               <input type="text" class="form-control" formControlName="organizationName">
+            </div>
+       </div>
+       <div class="col-4">
+            <div class="form-group">
+               <label>Organization Core Business</label>
+                <input type="text" class="form-control" formControlName="organizationCoreBusiness">
+            </div>
+       </div>
+
+       <div class="col-4">
+           <div class="form-group">
+              <label>Business Type</label>
+              <input type="text" class="form-control" formControlName="businessType">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group">
+               <label>Address</label>
+               <textarea class="form-control" formControlName="address" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+</form>

@@ -11,6 +11,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA, } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatTableModule} from '@angular/material/table';
+
 
 const modules = [
   MatFormFieldModule,
@@ -24,7 +26,8 @@ const modules = [
   MatDividerModule,
   MatSelectModule,
   MatDialogModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatTableModule
 ]
 
 @NgModule({
@@ -39,6 +42,7 @@ const modules = [
   providers: [
     { provide: MatDialogRef, useValue: {} },
     { provide: MAT_DIALOG_DATA, useValue: [] },
+   
   ],
 })
 

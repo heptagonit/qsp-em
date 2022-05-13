@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-onboard-client',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnboardClientComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
+
+  columnsToDisplay: string[] = ["organization","CoreBusiness","location","address","added","status","action"]
 
   ngOnInit(): void {
+  }
+
+  editOnBoardClient(){
+   this.router.navigateByUrl('/edit/1')
   }
 
 }
