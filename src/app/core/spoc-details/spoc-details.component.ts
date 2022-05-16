@@ -18,7 +18,7 @@ export class SpocDetailsComponent implements OnInit {
     this.editSpocDetails = new FormGroup({
       salespersonname: new FormControl(''),
       contactnumber: new FormControl(''),
-      location:new FormControl(''),
+      location:new FormControl('')
     })
   }
 
