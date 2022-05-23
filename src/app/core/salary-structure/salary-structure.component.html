@@ -1,0 +1,27 @@
+<h3>Salary structure data</h3>
+<form [formGroup]="editSalaryStructure">
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Statutory Bonus</label><br>
+                <select>
+                    <option>Monthly</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>PF Calculation</label><br>
+                <select>
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+               <label>Any Other Remarks</label><br>
+               <input type="text" class="form-control" formControlName="remarks">
+            </div>
+        </div>
+    </div>
+</form>

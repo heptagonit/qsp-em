@@ -1,0 +1,36 @@
+<form [formGroup]="editBacgorundverification">
+<h3>Background Verification</h3>
+<h3>About Client</h3>
+   <div class="row">
+       <div class="col-4">
+            <div class="form-group">
+               <label>Will the Associate undergo Background Verification?</label><br>
+               <select>
+                   <option>NA</option>
+               </select>
+            </div>
+       </div>
+       <div class="col-4">
+            <div class="form-group">
+               <label>If through Ikya/Coachieve, how the billing will take place.</label><br>
+               <select>
+                <option>NA</option>
+               </select>
+            </div>
+       </div>
+       <div class="col-4">
+           <div class="form-group">
+              <label>Who will perform the BGV?</label><br>
+              <input type="text" class="form-control" formControlName="performBGV">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group">
+               <label>If through external agency, how the billing will take place</label><br>
+               <input type="text" class="form-control" formControlName="billingPlace">
+            </div>
+        </div>
+    </div>
+</form>

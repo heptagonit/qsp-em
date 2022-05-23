@@ -16,7 +16,7 @@ export class OnboardClientComponent implements OnInit {
   }
 
   editOnBoardClient(){
-   this.router.navigateByUrl('/edit/1')
+   this.router.navigateByUrl('/edit/:id')
   }
 
 }

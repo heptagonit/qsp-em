@@ -12,6 +12,7 @@ export class SpocDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.createForm();
   }
 
   createForm(){

@@ -1,0 +1,153 @@
+<form [formGroup]="editCommercialDetails">
+<h3>Agreement Details</h3>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Type of contract</label><br>
+                <select>
+                    <option>Up front</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Agreement Start Date</label><br>
+                 <input type="text" class="form-control" formControlName="startDate">
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group">
+               <label>Agreement End Date</label><br>
+               <select>
+                  <option>No End Contract</option>
+               </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Agreed credit days</label><br>
+                <input type="text" class="form-control" formControlName="creditDays">
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Agreement Status</label><br>
+                <select>
+                    <option>Received Both party Signed Agreement</option>
+                </select> 
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group">
+               <label>Replacement Clause</label><br>
+               <input type="text" class="form-control" formControlName="endDate">
+            </div>
+        </div>
+    </div>
+<div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>F&F Settlement</label><br>
+                <select>
+                    <option>Received Both party Signed Agreement</option>
+                </select> 
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Average Salary of Outsourced Manpower</label><br>
+                <input type="text" class="form-control" formControlName="manpower">
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group">
+               <label>Replacement Clause </label><br>
+               <input type="text" class="form-control" formControlName="replacementClause">
+            </div>
+        </div>
+</div>
+
+<h3>Fee details</h3>
+<div class="row">
+    <div class="col-4">
+         <div class="form-group">
+            <label>Service Fee</label><br>
+            <input type="text" class="form-control" formControlName="serviceFee">
+         </div>
+    </div>
+    <div class="col-4">
+         <div class="form-group">
+            <label>ID Card Fee</label><br>
+            <input type="text" class="form-control" formControlName="idCardFee">
+         </div>
+    </div>
+
+    <div class="col-4">
+        <div class="form-group">
+           <label>Email ID Fee</label><br>
+           <input type="text" class="form-control" formControlName="emailIDFee">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+         <div class="form-group">
+            <label>Uniform Fee</label><br>
+            <input type="text" class="form-control" formControlName="uniformFee">
+         </div>
+    </div>
+    <div class="col-4">
+         <div class="form-group">
+            <label>Absorption Fee</label><br>
+            <input type="text" class="form-control" formControlName="absorptionFee">
+         </div>
+    </div>
+
+    <div class="col-4">
+        <div class="form-group">
+           <label>Onboarding Fee(One time)</label><br>
+           <input type="text" class="form-control" formControlName="onboardingFee">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+         <div class="form-group">
+            <label>Sourcing Fee</label><br>
+            <input type="text" class="form-control" formControlName="sourcingFee">
+         </div>
+    </div>
+    <div class="col-4">
+         <div class="form-group">
+            <label>Billing Waiting Period</label><br>
+            <select>
+                <option>45 Days</option>
+            </select> 
+         </div>
+    </div>
+
+    <div class="col-4">
+        <div class="form-group">
+           <label>Other Fees</label><br>
+           <input type="text" class="form-control" formControlName="otherFees">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+         <div class="form-group">
+            <label>TDS Section</label><br>
+            <select>
+                <option>194 J</option>
+            </select> 
+         </div>
+    </div>
+</div>
+</form>

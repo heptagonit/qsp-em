@@ -1,0 +1,73 @@
+<h3>Invoicing Process</h3>
+<form [formGroup]="editInvoiceProcess">
+   <div class="row">
+       <div class="col-4">
+            <div class="form-group">
+               <label>PAN Number</label><br>
+               <input type="text" class="form-control" formControlName="pannumber">
+            </div>
+       </div>
+       <div class="col-4">
+            <div class="form-group">
+               <label>Do Client have PO system?</label><br>
+                <input type="text" class="form-control" formControlName="posystem">
+            </div>
+       </div>
+       <div class="col-4">
+           <div class="form-group">
+              <label>Number of PO’s</label><br>
+              <input type="text" class="form-control" formControlName="numberofPO">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>TAN Number</label><br>
+                <input type="text" class="form-control" formControlName="tannumber">
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>PO Frequency</label><br>
+                <select>
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+               <label>Employee Mapping for Every PO Taken</label><br>
+               <select>
+                <option>NA</option>
+               </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>GST Number</label><br>
+                <input type="text" class="form-control" formControlName="gstnumber">
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Separate PO for Reimbursement/Incentive</label><br>
+                <select>
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>State</label><br>
+                <select>
+                    <option>Maharastra</option>
+                </select>
+             </div>
+        </div>
+    </div>
+</form>

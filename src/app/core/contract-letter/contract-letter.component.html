@@ -1,0 +1,72 @@
+<h3>Contract letter</h3>
+<form [formGroup]="editContractLetter">
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Client Name</label><br>
+                <input type="text" class="form-control" formControlName="clientName">
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Date of Joining of all associates</label><br>
+                 <input type="text" class="form-control" formControlName="dateOfJoining">
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group">
+               <label>Contract Period</label><br>
+               <input type="text" class="form-control" formControlName="contractPeriod">
+            </div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Approval from client on standard contract letter format required</label><br>
+                <select>
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Notice period</label><br>
+                <select>
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+               <label>Point to be mentioned on Contract Letter</label><br>
+               <input type="text" class="form-control" formControlName="point">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Client name to be mentioned on letter</label><br>
+                <select>
+                    <option>No</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Other documents to be taken during onboarding</label><br>
+                <select>
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+               <label>Contract Letter Format</label><br>
+               <input type="text" class="form-control" formControlName="point">
+            </div>
+        </div>
+    </div>
+ </form>

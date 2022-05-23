@@ -1,14 +1,29 @@
-table {
+table, tr {
     border: 1px solid #C9C8C8;   
     border-radius: 16px 16px 0px 0px;
 }
 
-th.mat-header-cell{
-    color:#333333;
-    font-weight:800;
-    background: #EFEFEF;
-}
+// th.mat-header-cell{
+//     color:#333333;
+//     font-weight:800;
+//     background: #EFEFEF;
+// }
 
 .tableAlignment{
     padding: 40px;
 }
+
+.heading{
+    padding-left: 15px;
+}
+ th{
+     padding-top: 10px;
+     color:#333333;
+      font-weight:800;
+      background: #EFEFEF;
+      padding-bottom: 10px;
+ }
+
+ td{
+     padding-top: 10px;
+ }

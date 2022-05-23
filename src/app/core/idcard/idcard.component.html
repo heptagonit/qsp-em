@@ -1,0 +1,35 @@
+<h3>ID Card</h3>
+<form [formGroup]="editIdCard">
+   <div class="row">
+       <div class="col-4">
+            <div class="form-group">
+               <label>ID Card Design</label><br>
+               <select>
+                   <option>NA</option>
+               </select>
+            </div>
+       </div>
+       <div class="col-4">
+            <div class="form-group">
+               <label>Approval Required on Design</label><br>
+               <select>
+                 <option>NA</option>
+              </select>
+            </div>
+       </div>
+       <div class="col-4">
+           <div class="form-group">
+              <label>Any specific point to be noted on ID card</label><br>
+              <input type="text" class="form-control" formControlName="specificPoint">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group">
+               <label>ID Card Design Format</label><br>
+               <textarea class="form-control" formControlName="address" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+</form>

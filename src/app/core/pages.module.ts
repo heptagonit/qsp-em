@@ -11,6 +11,18 @@ import { OnboardClientSearchComponent } from './onboard-client-search/onboard-cl
 import { CreateOnboardClientComponent } from './create-onboard-client/create-onboard-client.component';
 import { AboutClientComponent } from './about-client/about-client.component';
 import { SpocDetailsComponent } from './spoc-details/spoc-details.component';
+import { CommercialsComponent } from './commercials/commercials.component';
+import { PayrollComponent } from './payroll/payroll.component';
+import { InvocingProcessComponent } from './invocing-process/invocing-process.component';
+import { SalaryStructureComponent } from './salary-structure/salary-structure.component';
+import { ContractLetterComponent } from './contract-letter/contract-letter.component';
+import { IdcardComponent } from './idcard/idcard.component';
+import { OnbordingPointsComponent } from './onbording-points/onbording-points.component';
+import { EscalationMatrixComponent } from './escalation-matrix/escalation-matrix.component';
+import { ClientPotentialComponent } from './client-potential/client-potential.component';
+import { BackgroundVerificationComponent } from './background-verification/background-verification.component';
+import { ClientRequirementsComponent } from './client-requirements/client-requirements.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 @NgModule({
@@ -25,6 +37,18 @@ import { SpocDetailsComponent } from './spoc-details/spoc-details.component';
     CreateOnboardClientComponent,
     AboutClientComponent,
     SpocDetailsComponent,
+    CommercialsComponent,
+    PayrollComponent,
+    InvocingProcessComponent,
+    SalaryStructureComponent,
+    ContractLetterComponent,
+    IdcardComponent,
+    OnbordingPointsComponent,
+    EscalationMatrixComponent,
+    ClientPotentialComponent,
+    BackgroundVerificationComponent,
+    ClientRequirementsComponent,
+    NotesComponent,
   ],
   imports: [
     PagesRoutingModule,
