@@ -1,0 +1,26 @@
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar .active{
+    background-color: #1794D9; 
+  }
+
+  ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    color: black;
+  }
+
+  .q-img{
+   width: 50px;
+   padding-top: 13px;
+  }
+// // .onbording{
+// //   padding-left: 20px !important;
+// // }
+
+// .mat-tab-labels{
+//   padding-left: 20px !important;
+// }
+::ng-deep .mat-ink-bar{
+  left: 30px;
+}
+
+::ng-deep .mat-tab-labels{
+  padding-left: 30px;
+}

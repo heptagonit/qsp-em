@@ -8,6 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class AboutClientComponent implements OnInit {
 
+  panelOpenState = false;
   editOnbordingClient:FormGroup
 
   constructor() { }
@@ -20,7 +21,7 @@ export class AboutClientComponent implements OnInit {
     this.editOnbordingClient = new FormGroup({
       organizationName: new FormControl(''),
       organizationCoreBusiness: new FormControl(''),
-      businessType:new FormControl(''),
+      // businessType:new FormControl(''),
       address:new FormControl(''),
     })
   }

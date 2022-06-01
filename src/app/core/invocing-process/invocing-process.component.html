@@ -1,44 +1,53 @@
-<h3>Invoicing Process</h3>
-<form [formGroup]="editInvoiceProcess">
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Invoicing Process</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editInvoiceProcess" class="mt-3 space">
    <div class="row">
        <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>PAN Number</label><br>
-               <input type="text" class="form-control" formControlName="pannumber">
+               <input type="text" class="form-control mt-2" formControlName="pannumber">
             </div>
        </div>
        <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>Do Client have PO system?</label><br>
-                <input type="text" class="form-control" formControlName="posystem">
+                <input type="text" class="form-control mt-2" formControlName="posystem">
             </div>
        </div>
        <div class="col-4">
-           <div class="form-group">
+           <div class="form-group mt-4">
               <label>Number of PO’s</label><br>
-              <input type="text" class="form-control" formControlName="numberofPO">
+              <input type="text" class="form-control mt-2" formControlName="numberofPO">
            </div>
         </div>
     </div>
     <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>TAN Number</label><br>
-                <input type="text" class="form-control" formControlName="tannumber">
+                <input type="text" class="form-control mt-2" formControlName="tannumber">
              </div>
         </div>
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>PO Frequency</label><br>
-                <select>
+                <select class="mt-2">
                     <option>NA</option>
                 </select>
              </div>
         </div>
         <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>Employee Mapping for Every PO Taken</label><br>
-               <select>
+               <select  class="mt-2">
                 <option>NA</option>
                </select>
             </div>
@@ -46,15 +55,15 @@
     </div>
     <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>GST Number</label><br>
-                <input type="text" class="form-control" formControlName="gstnumber">
+                <input type="text" class="form-control mt-2" formControlName="gstnumber">
              </div>
         </div>
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Separate PO for Reimbursement/Incentive</label><br>
-                <select>
+                <select  class="mt-2">
                     <option>NA</option>
                 </select>
              </div>
@@ -62,12 +71,15 @@
     </div>
     <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>State</label><br>
-                <select>
+                <select  class="mt-2">
                     <option>Maharastra</option>
                 </select>
              </div>
         </div>
     </div>
 </form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

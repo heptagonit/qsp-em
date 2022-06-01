@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class IdcardComponent implements OnInit {
 
+  panelOpenState = false;
   editIdCard: FormGroup;
 
   constructor() { }
@@ -18,7 +19,8 @@ export class IdcardComponent implements OnInit {
   
   createForm(){
     this.editIdCard = new FormGroup({
-      specificPoint : new FormControl('')
+      specificPoint : new FormControl(''),
+      designFormat : new FormControl('')
     })
   }
 }

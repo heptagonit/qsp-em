@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class SalaryStructureComponent implements OnInit {
 
+  panelOpenState = false;
   editSalaryStructure: FormGroup;
   constructor() { }
 

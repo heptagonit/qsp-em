@@ -1,35 +1,47 @@
-<h3>ID Card</h3>
-<form [formGroup]="editIdCard">
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">ID Card</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editIdCard" class="mt-3 space">
    <div class="row">
        <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>ID Card Design</label><br>
-               <select>
+               <select class="mt-2">
                    <option>NA</option>
                </select>
             </div>
        </div>
        <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>Approval Required on Design</label><br>
-               <select>
+               <select class="mt-2">
                  <option>NA</option>
               </select>
             </div>
        </div>
        <div class="col-4">
-           <div class="form-group">
+           <div class="form-group mt-4">
               <label>Any specific point to be noted on ID card</label><br>
-              <input type="text" class="form-control" formControlName="specificPoint">
+              <input type="text" class="form-control mt-2" formControlName="specificPoint">
            </div>
         </div>
     </div>
     <div class="row">
         <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>ID Card Design Format</label><br>
-               <textarea class="form-control" formControlName="address" rows="3"></textarea>
+               <textarea class="form-control mt-2 design" formControlName="designFormat" rows="3"></textarea>
             </div>
         </div>
     </div>
 </form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

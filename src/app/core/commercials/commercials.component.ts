@@ -8,6 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class CommercialsComponent implements OnInit {
 
+  panelOpenState = false;
   editCommercialDetails:FormGroup;
   constructor() { }
 
@@ -27,7 +28,9 @@ export class CommercialsComponent implements OnInit {
     absorptionFee:new FormControl(''),
     onboardingFee: new FormControl(''),
     sourcingFee:new FormControl(''),
-    otherFees:new FormControl('')
+    otherFees:new FormControl(''),
+    manpower : new FormControl(''),
+    replacementClause : new FormControl('')
   })
   }
 

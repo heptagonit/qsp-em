@@ -8,6 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class SpocDetailsComponent implements OnInit {
 
+  panelOpenState = false;
   editSpocDetails:FormGroup
   constructor() { }
 

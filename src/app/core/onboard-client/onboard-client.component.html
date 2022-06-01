@@ -19,10 +19,11 @@
       <td>test</td>
       <td>test</td>
       <td>test</td>
-      <td><select>
+      <td><select (change)="editOnBoardClient($event)">
         <option>Action</option>
         <option>View</option>
-        <option (click)="editOnBoardClient()">Edit</option>
+        <option>Edit</option>
+        <option>Deactivate</option>
       </select></td>
     </tr>
   </table>

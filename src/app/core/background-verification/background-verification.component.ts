@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class BackgroundVerificationComponent implements OnInit {
 
+  panelOpenState = false;
   editBacgorundverification: FormGroup;
   constructor() { }
 

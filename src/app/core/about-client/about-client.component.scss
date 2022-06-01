@@ -1,0 +1,41 @@
+.pageBorder{
+    border: 1px solid #CCCCCC;
+    border-top: none;
+}
+input{
+    width: 350px;
+}
+select{
+    width: 350px;
+}
+.address{
+    width: 350px;
+}
+.space{
+    margin-left: 30px;
+}
+.line{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+// .mat-tab-label {
+//     min-width: 25px !important;
+//     padding: 5px;
+//     background-color: transparent;
+//     color: red;
+//     font-weight: 700;
+// }
+
+// /* Styles for the active tab label */
+// .mat-tab-label.mat-tab-label-active {
+//     min-width: 25px !important;
+//     padding: 5px;
+//     background-color: transparent;
+//     color: red;
+//     font-weight: 700;
+// }
+
+// /* Styles for the ink bar */
+// .mat-ink-bar {
+//     background-color: green;
+// }

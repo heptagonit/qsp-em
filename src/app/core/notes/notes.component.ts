@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class NotesComponent implements OnInit {
 
+  panelOpenState = false;
   editNotes : FormGroup;
   constructor() { }
 

@@ -1,25 +1,35 @@
-<form [formGroup]="editCommercialDetails">
-<h3>Agreement Details</h3>
+<div class="pageBorder">
+   <mat-accordion>
+       <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+       <mat-expansion-panel-header class="line">
+           <mat-panel-title class="mt-4">
+               <h6 class="space">Agreement Details</h6>
+             </mat-panel-title>
+             <hr>
+           </mat-expansion-panel-header>
+
+<form [formGroup]="editCommercialDetails" class="mt-3 space">
     <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Type of contract</label><br>
-                <select>
+                <select class="mt-2">
                     <option>Up front</option>
                 </select>
              </div>
         </div>
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Agreement Start Date</label><br>
-                 <input type="text" class="form-control" formControlName="startDate">
+                 <input type="text" class="form-control mt-2" formControlName="startDate">
              </div>
         </div>
  
         <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>Agreement End Date</label><br>
-               <select>
+               <select class="mt-2">
                   <option>No End Contract</option>
                </select>
             </div>
@@ -27,127 +37,132 @@
     </div>
     <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Agreed credit days</label><br>
-                <input type="text" class="form-control" formControlName="creditDays">
+                <button class="yesBtn mt-2">yes</button>
+                <button class="noBtn mt-2">No</button>
+                <input  type="text" class="mt-2 creditDays" formControlName="creditDays">
              </div>
         </div>
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Agreement Status</label><br>
-                <select>
+                <select class="mt-2">
                     <option>Received Both party Signed Agreement</option>
                 </select> 
              </div>
         </div>
  
         <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>Replacement Clause</label><br>
-               <input type="text" class="form-control" formControlName="endDate">
+               <input type="text" class="form-control mt-2" formControlName="endDate">
             </div>
         </div>
     </div>
 <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>F&F Settlement</label><br>
-                <select>
+                <select class="mt-2">
                     <option>Received Both party Signed Agreement</option>
                 </select> 
              </div>
         </div>
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Average Salary of Outsourced Manpower</label><br>
-                <input type="text" class="form-control" formControlName="manpower">
+                <input type="text" class="form-control mt-2" formControlName="manpower">
              </div>
         </div>
  
         <div class="col-4">
-            <div class="form-group">
+            <div class="form-group mt-4">
                <label>Replacement Clause </label><br>
-               <input type="text" class="form-control" formControlName="replacementClause">
+               <input type="text" class="form-control mt-2" formControlName="replacementClause">
             </div>
         </div>
 </div>
-
-<h3>Fee details</h3>
-<div class="row">
-    <div class="col-4">
-         <div class="form-group">
+<br>
+<h6 class="mt-3">Fee details</h6>
+<div class="row mt-2">
+    <div class="col-4"> 
+         <div class="form-group mt-4">
             <label>Service Fee</label><br>
-            <input type="text" class="form-control" formControlName="serviceFee">
+            <input type="text" class="form-control mt-2" formControlName="serviceFee">
          </div>
     </div>
     <div class="col-4">
-         <div class="form-group">
+         <div class="form-group mt-4">
             <label>ID Card Fee</label><br>
-            <input type="text" class="form-control" formControlName="idCardFee">
+            <input type="text" class="form-control mt-2" formControlName="idCardFee">
          </div>
     </div>
 
     <div class="col-4">
-        <div class="form-group">
+        <div class="form-group mt-4">
            <label>Email ID Fee</label><br>
-           <input type="text" class="form-control" formControlName="emailIDFee">
+           <input type="text" class="form-control mt-2" formControlName="emailIDFee">
         </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col-4">
-         <div class="form-group">
+         <div class="form-group mt-4">
             <label>Uniform Fee</label><br>
-            <input type="text" class="form-control" formControlName="uniformFee">
+            <input type="text" class="form-control mt-2" formControlName="uniformFee">
          </div>
     </div>
     <div class="col-4">
-         <div class="form-group">
+         <div class="form-group mt-4">
             <label>Absorption Fee</label><br>
-            <input type="text" class="form-control" formControlName="absorptionFee">
+            <input type="text" class="form-control mt-2" formControlName="absorptionFee">
          </div>
     </div>
 
     <div class="col-4">
-        <div class="form-group">
+        <div class="form-group mt-4">
            <label>Onboarding Fee(One time)</label><br>
-           <input type="text" class="form-control" formControlName="onboardingFee">
+           <input type="text" class="form-control mt-2" formControlName="onboardingFee">
         </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col-4">
-         <div class="form-group">
+         <div class="form-group mt-4">
             <label>Sourcing Fee</label><br>
-            <input type="text" class="form-control" formControlName="sourcingFee">
+            <input type="text" class="form-control mt-2" formControlName="sourcingFee">
          </div>
     </div>
     <div class="col-4">
-         <div class="form-group">
+         <div class="form-group mt-4">
             <label>Billing Waiting Period</label><br>
-            <select>
+            <select class="mt-2">
                 <option>45 Days</option>
             </select> 
          </div>
     </div>
 
     <div class="col-4">
-        <div class="form-group">
+        <div class="form-group mt-4">
            <label>Other Fees</label><br>
-           <input type="text" class="form-control" formControlName="otherFees">
+           <input type="text" class="form-control mt-2" formControlName="otherFees">
         </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-4">
+    <div class="col-4 mt-4">
          <div class="form-group">
             <label>TDS Section</label><br>
-            <select>
+            <select class="mt-2">
                 <option>194 J</option>
             </select> 
          </div>
     </div>
 </div>
 </form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

@@ -1,24 +1,37 @@
-<h3>Particulars</h3>
-<form [formGroup]="editSpocDetails">
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Particulars</h6>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+<form [formGroup]="editSpocDetails" class="mt-3 space">
     <div class="row">
         <div class="col-4">
              <div class="form-group">
                 <label>Sales Person Name</label><br>
-                <input type="text" class="form-control" formControlName="salespersonname">
+                <select class="mt-2">
+                    <option>NA</option>
+                </select>
              </div>
         </div>
         <div class="col-4">
              <div class="form-group">
                 <label>Contact Number</label><br>
-                 <input type="text" class="form-control" formControlName="contactnumber">
+                 <input type="text" class="form-control mt-2" formControlName="contactnumber">
              </div>
         </div>
  
         <div class="col-4">
             <div class="form-group">
                <label>Sign up location</label><br>
-               <input type="text" class="form-control" formControlName="location">
+               <input type="text" class="form-control mt-2" formControlName="location">
             </div>
         </div>
     </div>
 </form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

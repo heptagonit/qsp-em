@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class ClientPotentialComponent implements OnInit {
 
+  panelOpenState = false;
   editClientPotential: FormGroup
   constructor() { }
 

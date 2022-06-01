@@ -12,7 +12,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA, } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from "@angular/material/core";
 
 const modules = [
   MatFormFieldModule,
@@ -27,7 +29,10 @@ const modules = [
   MatSelectModule,
   MatDialogModule,
   MatSnackBarModule,
-  MatTableModule
+  MatTableModule,
+  MatExpansionModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
 ]
 
 @NgModule({

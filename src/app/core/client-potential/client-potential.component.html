@@ -1,14 +1,24 @@
-<form [formGroup]="editClientPotential">
-    <h3>Client Potential Details</h3>
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Client Potential Details</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editClientPotential" class="mt-3 space">
     <div class="row">
         <div class="col-4">
-             <div class="form-group">
+             <div class="form-group mt-4">
                 <label>Total potential for Temp Staffing</label><br>
-                <input type="text" class="form-control" formControlName="tempstaffing">
+                <input type="text" class="form-control mt-2" formControlName="tempstaffing">
              </div>
         </div>
     </div><br>
-    <h3>Other Vendors (With Headcount)</h3>
+    <h5>Other Vendors (With Headcount)</h5>
 </form>
-
-
+</mat-expansion-panel>
+</mat-accordion>
+</div>

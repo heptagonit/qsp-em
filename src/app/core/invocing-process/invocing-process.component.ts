@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class InvocingProcessComponent implements OnInit {
 
+  panelOpenState = false;
   editInvoiceProcess: FormGroup
   constructor() { }
 

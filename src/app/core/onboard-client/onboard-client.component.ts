@@ -8,15 +8,17 @@ import { Router } from '@angular/router';
 })
 export class OnboardClientComponent implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router: Router) { }
 
-  columnsToDisplay: string[] = ["organization","CoreBusiness","location","address","added","status","action"]
+  columnsToDisplay: string[] = ["organization", "CoreBusiness", "location", "address", "added", "status", "action"]
 
   ngOnInit(): void {
   }
 
-  editOnBoardClient(){
-   this.router.navigateByUrl('/edit/:id')
+  editOnBoardClient(event) {
+    if (event.target.value === 'Edit') {
+      this.router.navigateByUrl('dashboard/edit/1');
+    }
   }
 
 }

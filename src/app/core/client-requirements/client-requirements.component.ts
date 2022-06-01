@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class ClientRequirementsComponent implements OnInit {
 
+  panelOpenState = false;
   editClientRequirements : FormGroup;
   constructor() { }
 

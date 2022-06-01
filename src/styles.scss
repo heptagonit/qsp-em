@@ -45,7 +45,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .main-tabs {
-  padding-left: 5.5rem;
+  padding-left: 3.5rem;
 }
 .header-content,.tab-content {
   height: 70px;
@@ -105,3 +105,11 @@ tr {
   text-align: left;
   padding: 8px;
 }
+
+label{
+  color: #757AA0;
+}
+input{
+  border:1px solid #E0E7FF;
+}
+

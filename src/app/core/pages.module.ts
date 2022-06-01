@@ -23,6 +23,7 @@ import { ClientPotentialComponent } from './client-potential/client-potential.co
 import { BackgroundVerificationComponent } from './background-verification/background-verification.component';
 import { ClientRequirementsComponent } from './client-requirements/client-requirements.component';
 import { NotesComponent } from './notes/notes.component';
+import { InsuranceCoverageComponent } from './insurance-coverage/insurance-coverage.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { NotesComponent } from './notes/notes.component';
     BackgroundVerificationComponent,
     ClientRequirementsComponent,
     NotesComponent,
+    InsuranceCoverageComponent,
   ],
   imports: [
     PagesRoutingModule,

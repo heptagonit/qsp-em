@@ -10,7 +10,7 @@ table, tr {
 // }
 
 .tableAlignment{
-    padding: 40px;
+    padding: 33px;
 }
 
 .heading{
@@ -26,4 +26,13 @@ table, tr {
 
  td{
      padding-top: 10px;
+ }
+
+ select{
+     background: #1794D9;
+     color: #FFFFFF;
+ }
+ option{
+     background: white;
+     color:black;
  }

@@ -9,6 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class ContractLetterComponent implements OnInit {
 
+  panelOpenState = false;
   editContractLetter: FormGroup;
   constructor() { }
 

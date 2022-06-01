@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class PayrollComponent implements OnInit {
 
+  panelOpenState = false;
   editPayrollDetails: FormGroup
   constructor() { }
 
@@ -19,6 +20,14 @@ export class PayrollComponent implements OnInit {
    this.editPayrollDetails = new FormGroup({
     payrollProcess : new FormControl(''),
     clientInput: new FormControl(''),
+    nameOfPE: new FormControl(''),
+    empIDPE: new FormControl(''),
+    emailIDPE: new FormControl(''),
+    empIDZM: new FormControl(''),
+    nameOfZM: new FormControl(''),
+    empIDRM: new FormControl(''),
+    nameOfRM: new FormControl(''),
+    payout: new FormControl('')
    })
   }
 
