@@ -24,6 +24,24 @@ import { BackgroundVerificationComponent } from './background-verification/backg
 import { ClientRequirementsComponent } from './client-requirements/client-requirements.component';
 import { NotesComponent } from './notes/notes.component';
 import { InsuranceCoverageComponent } from './insurance-coverage/insurance-coverage.component';
+import { OnboardClientListComponent } from './onboard-client-list/onboard-client-list.component';
+import { EditClientComponent } from './edit-onboard-client/edit-client/edit-client.component';
+import { EditAboutClientComponent } from './edit-onboard-client/edit-about-client/edit-about-client.component';
+import { EditSpocDetailComponent } from './edit-onboard-client/edit-spoc-detail/edit-spoc-detail.component';
+import { EditCommercialComponent } from './edit-onboard-client/edit-commercial/edit-commercial.component';
+import { EditPayrollComponent } from './edit-onboard-client/edit-payroll/edit-payroll.component';
+import { EditInvoicingProcessComponent } from './edit-onboard-client/edit-invoicing-process/edit-invoicing-process.component';
+import { EditSalaryStructureComponent } from './edit-onboard-client/edit-salary-structure/edit-salary-structure.component';
+import { EditInsuranceCoverageComponent } from './edit-onboard-client/edit-insurance-coverage/edit-insurance-coverage.component';
+import { EditContractLetterComponent } from './edit-onboard-client/edit-contract-letter/edit-contract-letter.component';
+import { EditIdcardComponent } from './edit-onboard-client/edit-idcard/edit-idcard.component';
+import { EditOnboardingPointsComponent } from './edit-onboard-client/edit-onboarding-points/edit-onboarding-points.component';
+import { EditEscalationMatrixComponent } from './edit-onboard-client/edit-escalation-matrix/edit-escalation-matrix.component';
+import { EditClientPotentialComponent } from './edit-onboard-client/edit-client-potential/edit-client-potential.component';
+import { EditOperationComponent } from './edit-onboard-client/edit-operation/edit-operation.component';
+import { EditBackgroundVerificationComponent } from './edit-onboard-client/edit-background-verification/edit-background-verification.component';
+import { EditClientRequirementsComponent } from './edit-onboard-client/edit-client-requirements/edit-client-requirements.component';
+import { EditImportantNotesComponent } from './edit-onboard-client/edit-important-notes/edit-important-notes.component';
 
 
 @NgModule({
@@ -51,6 +69,24 @@ import { InsuranceCoverageComponent } from './insurance-coverage/insurance-cover
     ClientRequirementsComponent,
     NotesComponent,
     InsuranceCoverageComponent,
+    OnboardClientListComponent,
+    EditClientComponent,
+    EditAboutClientComponent,
+    EditSpocDetailComponent,
+    EditCommercialComponent,
+    EditPayrollComponent,
+    EditInvoicingProcessComponent,
+    EditSalaryStructureComponent,
+    EditInsuranceCoverageComponent,
+    EditContractLetterComponent,
+    EditIdcardComponent,
+    EditOnboardingPointsComponent,
+    EditEscalationMatrixComponent,
+    EditClientPotentialComponent,
+    EditOperationComponent,
+    EditBackgroundVerificationComponent,
+    EditClientRequirementsComponent,
+    EditImportantNotesComponent,
   ],
   imports: [
     PagesRoutingModule,

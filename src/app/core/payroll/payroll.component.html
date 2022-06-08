@@ -32,22 +32,28 @@
             </div>
         </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-5 mt-4">
-            <label>from</label>
-            <div class="form-group mt-4">
-                <label class="summary-label">Pay register to be shared by IKYA</label><br>
-                    <div class="d-inline-block font-light-14">
-                        <mat-form-field class="summary-datepicker summary-dropdown">
-                            <input matInput [matDatepicker]="toPicker">
-                            <mat-datepicker-toggle matSuffix [for]="toPicker">
-                            </mat-datepicker-toggle>
-                            <mat-datepicker #toPicker></mat-datepicker>
-                        </mat-form-field>
-                    </div>
-            </div> 
+    <div class="row">
+        <div class="col-8 mt-4">
+            <label>From</label>
+            <div class="d-inline-block font-light-14 toSpace">
+                <mat-form-field class=" summary-dropdown" appearance="outline">
+                    <input matInput [matDatepicker]="fromPicker">
+                    <mat-datepicker-toggle matSuffix [for]="fromPicker">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #fromPicker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <label class="toSpace">T0</label>
+            <div class="d-inline-block font-light-14">
+                <mat-form-field class=" summary-dropdown" appearance="outline">
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
         </div>
-    </div> -->
+    </div>
     <div class="row">
         <div class="col-4">
             <div class="form-group mt-4">

@@ -9,7 +9,7 @@
   color: #1794D9;
 }
 .heading{
-  padding: 20px;
+  padding: 40px;
   background: #F6F7F8;
 }
 .onbording{
@@ -19,8 +19,8 @@
     background: green;
     color:white;
   }
-  ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
-    color: #1794D9;
+  ::ng-deep  .mat-tab-list .mat-tab-labels .mat-tab-label-active{
+    color: #1794D9 !important;
     // background-color: green;
     // border-bottom: none;
   }

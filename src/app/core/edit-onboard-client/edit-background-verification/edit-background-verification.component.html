@@ -1,0 +1,48 @@
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Background Verification</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+
+<form [formGroup]="editBacgorundverification" class="mt-3 space">
+   <div class="row">
+       <div class="col-4">
+            <div class="form-group">
+               <label>Will the Associate undergo Background Verification?</label><br>
+               <select class="mt-2">
+                   <option>NA</option>
+               </select>
+            </div>
+       </div>
+       <div class="col-4">
+            <div class="form-group">
+               <label>If through Ikya/Coachieve, how the billing will take place.</label><br>
+               <select class="mt-2">
+                <option>NA</option>
+               </select>
+            </div>
+       </div>
+       <div class="col-4">
+           <div class="form-group">
+              <label>Who will perform the BGV?</label><br>
+              <input type="text" class="form-control mt-2" formControlName="performBGV">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+               <label>If through external agency, how the billing will take place</label><br>
+               <input type="text" class="form-control mt-2" formControlName="billingPlace">
+            </div>
+        </div>
+    </div>
+</form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

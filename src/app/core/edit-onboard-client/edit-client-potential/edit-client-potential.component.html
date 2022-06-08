@@ -1,0 +1,25 @@
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Client Potential Details</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editClientPotential" class="mt-3 space">
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Total potential for Temp Staffing</label><br>
+                <input type="text" class="form-control mt-2" formControlName="tempstaffing">
+             </div>
+        </div>
+    </div><br>
+    <h6>Other Vendors (With Headcount)</h6>
+</form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>
+

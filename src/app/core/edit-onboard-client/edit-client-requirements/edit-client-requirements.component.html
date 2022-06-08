@@ -1,0 +1,22 @@
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Client Requirements</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editClientRequirements" class="mt-3 space">
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4"> 
+               <textarea class="form-control mt-2 requirements" formControlName="requirements" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+</form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

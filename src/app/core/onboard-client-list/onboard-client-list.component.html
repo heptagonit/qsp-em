@@ -1,0 +1,85 @@
+<div class="w-100">
+    <app-onboard-client-search></app-onboard-client-search>
+  </div>
+    <div class="tableAlignment">
+    <table>
+      <tr class="table-heading">
+        <th class="heading">Organization Name</th>
+        <th>Core Business line</th>
+        <th>Location</th>
+        <th>Legal Address</th>
+        <th>Added By & On</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td class="heading">test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td><select (change)="editOnBoardClient($event)">
+          <option>Action</option>
+          <option>View</option>
+          <option>Edit</option>
+          <option>Deactivate</option>
+        </select></td>
+      </tr>
+    </table>
+  </div>
+
+  
+<!-- <div class="tableAlignment">
+  <table mat-table>
+    <ng-container matColumnDef="organization" >
+      <th mat-header-cell *matHeaderCellDef> Organization Name </th>
+      <td mat-cell *matCellDef> Test </td>
+    </ng-container>
+
+    <ng-container matColumnDef="CoreBusiness">
+      <th mat-header-cell *matHeaderCellDef>Core Business line </th>
+      <td mat-cell *matCellDef> Test </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="location">
+      <th mat-header-cell *matHeaderCellDef>Location</th>
+      <td mat-cell *matCellDef="let element">Test </td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef>Legal Address</th>
+      <td mat-cell *matCellDef>Test </td>
+    </ng-container>
+
+    <ng-container matColumnDef="added">
+      <th mat-header-cell *matHeaderCellDef>Added By & On</th>
+      <td mat-cell *matCellDef>Test </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef>Test </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Action</th>
+      <td mat-cell *matCellDef>Test </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns:columnsToDisplay ;"></tr>
+
+    </table>
+ </div> -->
+    <!-- <mat-table>
+      <mat-header-row>
+       <mat-header-cell>One</mat-header-cell>
+       <mat-header-cell>Two</mat-header-cell>
+      </mat-header-row>
+      <mat-row>
+       <mat-cell>aaa</mat-cell>
+       <mat-cell>bbb</mat-cell>
+      </mat-row>
+     </mat-table> -->

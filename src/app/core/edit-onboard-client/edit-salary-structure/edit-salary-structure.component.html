@@ -1,0 +1,39 @@
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Salary structure data</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editSalaryStructure" class="mt-3 space">
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Statutory Bonus</label><br>
+                <select class="mt-2">
+                    <option>Monthly</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>PF Calculation</label><br>
+                <select class="mt-2">
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+               <label>Any Other Remarks</label><br>
+               <input type="text" class="form-control mt-2" formControlName="remarks">
+            </div>
+        </div>
+    </div>
+</form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

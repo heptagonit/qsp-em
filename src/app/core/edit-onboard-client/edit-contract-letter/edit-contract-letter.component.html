@@ -1,0 +1,84 @@
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Contract letter</h6>
+              </mat-panel-title>
+              <hr>
+            </mat-expansion-panel-header>
+<form [formGroup]="editContractLetter" class="space mt-3">
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Client Name</label><br>
+                <input type="text" class="form-control mt-2" formControlName="clientName">
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Date of Joining of all associates</label><br>
+                 <input type="text" class="form-control mt-2" formControlName="dateOfJoining">
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group mt-4">
+               <label>Contract Period</label><br>
+               <input type="text" class="form-control mt-2" formControlName="contractPeriod">
+            </div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Approval from client on standard contract letter format required</label><br>
+                <select class="mt-2">
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Notice period</label><br>
+                <select class="mt-2">
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+               <label>Point to be mentioned on Contract Letter</label><br>
+               <input type="text" class="form-control" formControlName="point">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Client name to be mentioned on letter</label><br>
+                <select class="mt-2">
+                    <option>No</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group mt-4">
+                <label>Other documents to be taken during onboarding</label><br>
+                <select class="mt-2">
+                    <option>NA</option>
+                </select>
+             </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+               <label>Contract Letter Format</label><br>
+               <input type="text" class="form-control mt-2" formControlName="point">
+            </div>
+        </div>
+    </div>
+ </form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

@@ -1,0 +1,389 @@
+<div class="pageBorder">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+       <mat-expansion-panel-header class="line">
+            <mat-panel-title class="mt-4">
+                <h6 class="space">Payroll process</h6>
+              </mat-panel-title>
+              <hr>
+       </mat-expansion-panel-header>
+<form [formGroup]="editPayrollDetails" class="mt-3 space">
+    <div class="row">
+        <div class="col-4 mt-3">
+             <div class="form-group">
+                <label class="mt-4">Payroll Process</label><br>
+                <input type="text" class="form-control mt-2" formControlName="payrollProcess">
+             </div>
+        </div>
+        <div class="col-4 mt-3">
+             <div class="form-group">
+                <label class="mt-4">Cut off date or Attendance Cycle</label><br>
+               <select class="mt-2">
+                    <option>Select</option>
+               </select>
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group mt-3">
+               <label class="mt-4">Input from Client</label><br>
+               <input type="text" class="form-control mt-2" formControlName="clientInput">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 mt-4">
+            <label>From</label>
+            <div class="d-inline-block font-light-14 toSpace">
+                <mat-form-field class=" summary-dropdown" appearance="outline">
+                    <input matInput [matDatepicker]="fromPicker">
+                    <mat-datepicker-toggle matSuffix [for]="fromPicker">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #fromPicker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <label class="toSpace">T0</label>
+            <div class="d-inline-block font-light-14">
+                <mat-form-field class=" summary-dropdown" appearance="outline">
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label class="summary-label">Pay register to be shared by IKYA</label><br>
+                    <div class="d-inline-block font-light-14">
+                        <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                            <input matInput [matDatepicker]="toPicker">
+                            <mat-datepicker-toggle matSuffix [for]="toPicker">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #toPicker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label class="summary-label">Approval from Client</label><br>
+                <div class="d-inline-block font-light-14">
+                    <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                        <input matInput [matDatepicker]="Approval">
+                        <mat-datepicker-toggle matSuffix [for]="Approval">
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #Approval></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    <div class="col-4">
+        <div class="form-group mt-4">
+            <label class="summary-label">Invoice Submission Date</label><br>
+            <div class="d-inline-block font-light-14">
+                <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                    <input matInput [matDatepicker]="Invoice">
+                    <mat-datepicker-toggle matSuffix [for]="Invoice">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #Invoice></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label class="summary-label">Collection Date</label><br>
+                    <div class="d-inline-block font-light-14">
+                        <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                            <input matInput [matDatepicker]="Date">
+                            <mat-datepicker-toggle matSuffix [for]="Date">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #Date></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label class="summary-label">Payout</label><br>
+                <div class="d-inline-block font-light-14">
+                    <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                        <input matInput [matDatepicker]="payOut">
+                        <mat-datepicker-toggle matSuffix [for]="payOut">
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #payOut></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    <div class="col-4">
+        <div class="form-group mt-4">
+        <label>Invoice</label><br>
+            <select class="mt-2">
+                <option>
+                    single
+                </option>
+            </select>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Payroll Location</label><br>
+            <select class="mt-2">
+                <option>Mumbai</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Payroll HC</label><br>
+            <select class="mt-2">
+                <option>3</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>First Payroll Month</label><br>
+            <select class="mt-2">
+                <option>3</option>
+            </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Business Vertical</label><br>
+            <select class="mt-2">
+                <option>GS</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Industry tagging</label><br>
+            <select class="mt-2">
+                <option>Select</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Manpower Profile</label><br>
+            <select>
+                <option>Select</option>
+            </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Bank Name</label><br>
+            <select class="mt-2">
+                <option>Select</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Payment Method</label><br>
+            <select class="mt-2">
+                <option>Select</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label>Salary Calculation</label><br>
+            <select class="mt-2">
+                <option>Select</option>
+            </select>
+            </div>
+        </div>
+    </div>
+    <h5 class="mt-4">Relmbursement process</h5>
+    <div class="row">
+        <div class="col-4">
+             <div class="form-group">
+                <label>Payroll Process</label><br>
+                <input type="text" class="form-control" formControlName="payrollProcess">
+             </div>
+        </div>
+        <div class="col-4">
+             <div class="form-group">
+                <label>Cut off date or Attendance Cycle</label><br>
+               <select>
+                    <option>Select</option>
+               </select>
+             </div>
+        </div>
+ 
+        <div class="col-4">
+            <div class="form-group">
+               <label>Input from Client</label><br>
+               <input type="text" class="form-control" formControlName="clientInput">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-5 mt-4">
+            <label>from</label>
+            <div class="form-group mt-4">
+                <label class="summary-label">Pay register to be shared by IKYA</label><br>
+                    <div class="d-inline-block font-light-14">
+                        <mat-form-field class="summary-datepicker summary-dropdown">
+                            <input matInput [matDatepicker]="toPicker">
+                            <mat-datepicker-toggle matSuffix [for]="toPicker">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #toPicker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+            </div>   
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label class="summary-label">Pay register to be shared by IKYA</label><br>
+                    <div class="d-inline-block font-light-14">
+                        <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                            <input matInput [matDatepicker]="register">
+                            <mat-datepicker-toggle matSuffix [for]="register">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #register></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label class="summary-label">Approval from Client</label><br>
+                <div class="d-inline-block font-light-14">
+                    <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                        <input matInput [matDatepicker]="client">
+                        <mat-datepicker-toggle matSuffix [for]="client">
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #client></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    <div class="col-4">
+        <div class="form-group mt-4">
+            <label class="summary-label">Invoice Submission Date</label><br>
+            <div class="d-inline-block font-light-14">
+                <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                    <input matInput [matDatepicker]="submission">
+                    <mat-datepicker-toggle matSuffix [for]="submission">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #submission></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label class="summary-label">Collection Date</label><br>
+                    <div class="d-inline-block font-light-14">
+                        <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                            <input matInput [matDatepicker]="collection">
+                            <mat-datepicker-toggle matSuffix [for]="collection">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #collection></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-group mt-4">
+            <label class="summary-label">Payout</label><br>
+                <div class="d-inline-block font-light-14">
+                    <mat-form-field class="summary-datepicker summary-dropdown" appearance="outline">
+                        <input matInput [matDatepicker]="payout">
+                        <mat-datepicker-toggle matSuffix [for]="payout">
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #payout></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    <div class="col-4">
+        <div class="form-group mt-4">
+        <label>Invoice</label><br>
+            <select class="mt-2">
+                <option>
+                    single
+                </option>
+            </select>
+        </div>
+    </div>
+    </div>
+    <h5>Point of contact details</h5>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>Name of PE</label><br>
+                <input type="text" formControlName="nameOfPE" class="form-control mt-2">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>PE Employee ID</label><br>
+                <input type="text" formControlName="empIDPE" class="form-control mt-2">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>PE Email ID</label><br>
+                <input type="text" formControlName="emailIDPE" class="form-control mt-2">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>RM Name</label><br>
+                <input type="text" formControlName="nameOfRM" class="form-control mt-2">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>RM Email ID</label><br>
+                <input type="text" formControlName="empIDRM" class="form-control mt-2">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>ZM Name</label><br>
+                <input type="text" formControlName="nameOfZM" class="form-control mt-2">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mt-4">
+                <label>ZM Email ID</label><br>
+                <input type="text" formControlName="empIDZM" class="form-control mt-2">
+            </div>
+        </div>
+    </div>
+</form>
+</mat-expansion-panel>
+</mat-accordion>
+</div>

@@ -2,8 +2,8 @@
     background-color: #1794D9; 
   }
 
-  ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
-    color: black;
+  ::ng-deep .mat-tab-list .mat-tab-labels  .mat-tab-label-active {
+    color: black !important;
   }
 
   .q-img{

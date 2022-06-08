@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-onboard-client-search',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnboardClientSearchComponent implements OnInit {
 
-  constructor() { }
+  constructor( public router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  createOnboardingClient(event){
+    this.router.navigateByUrl('dashboard/create/1');
   }
 
 }
