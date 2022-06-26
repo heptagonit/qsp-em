@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from './angular-material-module';
 import { HeaderComponent } from './header/header.component';
+import { AuthModule } from '../core/auth/auth.module';
 @NgModule({
   declarations: [
   

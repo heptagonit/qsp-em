@@ -21,7 +21,10 @@
   left: 30px;
 }
 
-
 ::ng-deep .mat-tab-labels{
   padding-left: 30px;
+}
+::ng-deep .mat-tab-label .mat-tab-label-content {
+  color: black;
+  font-weight: 600;
 }

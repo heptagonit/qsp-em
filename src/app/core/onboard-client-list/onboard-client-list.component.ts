@@ -18,7 +18,7 @@ export class OnboardClientListComponent implements OnInit {
 
   editOnBoardClient(event) {
     if (event.target.value === 'Edit') {
-      this.router.navigateByUrl('dashboard/edit/1');
+      this.router.navigateByUrl('dashboard/client-module/edit/1');
     }
   }
 

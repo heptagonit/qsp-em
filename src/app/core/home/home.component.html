@@ -13,12 +13,14 @@
                 </div>
                 <div class="main-tabs d-flex">
                   <ul class="navbar-nav  nav ms-auto mt-2 mt-lg-0 tab-content">
-                    <li class="tab-item "><a href="" class="tab-link nav-link">DashBoard</a></li>
+                    <li class="tab-item "><a a routerLink="/dashboard" routerLinkAction="active" class="tab-link nav-link">DashBoard</a></li>
                   </ul>
                 </div>
                 <div class="main-tabs d-flex">
                   <ul class="navbar-nav  nav ms-auto mt-2 mt-lg-0 tab-content">
-                    <li class="tab-item"> <a href="" class="tab-link nav-link">Client Module</a></li>
+                    <li class="tab-item" routerLinkAction="active" [ngStyle]="{'background-color':isActiveProject? '#0000002C' : '' }"> 
+                      <a (click)="activeProject()" [ngStyle]="{'color':isActiveProject? '#ffffff' : '' }"
+                      routerLink="/dashboard/client-module"  class="tab-link nav-link">Client Module</a></li>
                   </ul>
                 </div>
                 <div class="main-tabs d-flex">
@@ -31,6 +33,20 @@
                     <li class="tab-item"> <a href="" class="tab-link nav-link">Settings</a></li>
                   </ul>
                 </div>
+                <div class="main-tabs d-flex">
+                  <ul class="navbar-nav  nav ms-auto mt-2 mt-lg-0 tab-content">
+                    <li class="tab-item" routerLinkAction="active" [ngStyle]="{'background-color':isActivePassword? '#0000002C' : '' }"> 
+                      <a (click)="activePassword()" [ngStyle]="{'color':isActivePassword? '#ffffff' : '' }"
+                      routerLink="/dashboard/change-password"  class="tab-link nav-link">Password Reset</a></li>
+                  </ul>
+                </div>
+                <div class="main-tabs d-flex">
+                  <ul class="navbar-nav  nav ms-auto mt-2 mt-lg-0 tab-content">
+                    <li class="tab-item" routerLinkAction="active" [ngStyle]="{'background-color':isActiveProfile? '#0000002C' : '' }"> 
+                      <a (click)="activeProfile()" [ngStyle]="{'color':isActiveProfile? '#ffffff' : '' }"
+                      routerLink="/dashboard/profile-page"  class="tab-link nav-link">Profile Page</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </nav>
@@ -39,7 +55,8 @@
     </div>
   </div>
 </div>
-<mat-tab-group mat-align-tabs="start" animationDuration="0ms">
+<router-outlet></router-outlet>
+<!-- <mat-tab-group mat-align-tabs="start" animationDuration="0ms">
   <mat-tab label="Onboard a client" class="onbording">
     <app-onboard-client></app-onboard-client>
   </mat-tab>
@@ -55,4 +72,5 @@
   <mat-tab label="Client Alerts">
     <app-client-alerts></app-client-alerts>
   </mat-tab>
-</mat-tab-group>
+</mat-tab-group> -->
+

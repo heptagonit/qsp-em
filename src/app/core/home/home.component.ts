@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isActiveProject: boolean;
+  isActivePassword:boolean;
+  isActiveProfile: boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
+
+activeProject() {
+    this.isActiveProject = true;
+  }
+  activePassword() {
+    this.isActivePassword = true;
+  }
+  activeProfile() {
+    this.isActiveProfile = true;
+  }
+
 }
+

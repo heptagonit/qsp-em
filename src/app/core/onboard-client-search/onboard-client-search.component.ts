@@ -14,7 +14,7 @@ export class OnboardClientSearchComponent implements OnInit {
   }
 
   createOnboardingClient(event){
-    this.router.navigateByUrl('dashboard/create/1');
+    this.router.navigateByUrl('dashboard/client-module/create/1');
   }
 
 }

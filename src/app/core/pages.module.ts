@@ -42,7 +42,9 @@ import { EditOperationComponent } from './edit-onboard-client/edit-operation/edi
 import { EditBackgroundVerificationComponent } from './edit-onboard-client/edit-background-verification/edit-background-verification.component';
 import { EditClientRequirementsComponent } from './edit-onboard-client/edit-client-requirements/edit-client-requirements.component';
 import { EditImportantNotesComponent } from './edit-onboard-client/edit-important-notes/edit-important-notes.component';
-
+import { AuthModule } from './auth/auth.module';
+import { ClientModuleComponent } from './client-module/client-module.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -87,10 +89,13 @@ import { EditImportantNotesComponent } from './edit-onboard-client/edit-importan
     EditBackgroundVerificationComponent,
     EditClientRequirementsComponent,
     EditImportantNotesComponent,
+    ClientModuleComponent,
+    ProfilePageComponent,
   ],
   imports: [
     PagesRoutingModule,
-    SharedModule
+    SharedModule,
+    AuthModule
   ]
 })
 export class PagesModule { }
